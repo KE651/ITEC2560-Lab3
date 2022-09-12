@@ -1,0 +1,12 @@
+body {
+    background-color: mistyrose;
+    color:rebeccapurple;
+    font-family: "Times New Roman", serif;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.jumbotron h1{
+    color: white;
+}
+

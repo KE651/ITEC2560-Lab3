@@ -1,0 +1,50 @@
+
+body {
+    background-image: linear-gradient(to bottom right, navy, green);
+    color:palegoldenrod;
+    font-family: 'League Spartan', sans-serif;font-size: 20px;
+}
+
+h1 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 26px;
+}
+
+h2 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 23px;
+}
+select {
+    font-family: 'League Spartan', sans-serif;font-size: 16px;
+}
+
+textarea {
+    color:darkblue;
+    font-family: 'League Spartan', sans-serif;font-size: 16px;
+    font-weight: bold;
+    border-style:solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+input{
+    font-family: 'League Spartan', sans-serif;font-size: 16px;
+}
+
+input[name="emails"]{
+    accent-color: orange;
+}
+input[name="sessions"]{
+    accent-color: orange;
+}
+.submit {
+    background-color: orange;
+    color:darkblue;
+    font-weight: bolder;
+    font-size:x-large;
+}
+
+* {
+    box-sizing: border-box;
+}
+/* for responsive design, include padding and border for all elements https://www.w3schools.com/css/css_rwd_grid.asp */

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+<head>
+    <title>Favorite Program</title>
+</head>
+
+<body>
+<div class="jumbotron bg-primary mt-4">
+    <h1>About one of my favorite programs...</h1>
+</div>
+<!-- https://www.softwaretestinghelp.com/bootstrap/bootstrap-4-jumbotron/  CHANGING COLOR OF JUMBOTRON-->
+
+<p>For my Python programming course I wrote a program to create a mini travel guide for 5 Minnesota State Parks.<br>
+This was fun to work on because every time I ran it, I learned about different state parks!</p>
+
+<p>Several functions divided the main operations of the program.  The code shown below are excerpts only.</p>
+<p>The first function to run pulled date from an API:</p>
+<pre>
+        <code>
+            def get_data():
+                import requests
+                url = "https://mn-state-parks.herokuapp.com/api/list"
+                try:
+                    mn_parks = requests.get(url).json()
+        </code>
+</pre>
+
+<p>Another function randomly selected five state parks from the API data.</p>
+<pre>
+        <code>
+            def choose_parks(mn_parks):
+                import random
+                my_parks = []  # empty list, will hold parkIDs
+                count = 0   # will track number of unique parks selected
+                park_id_list = []  # empty list
+                for index in range(len(mn_parks)):
+                    park_id_list.append(mn_parks[index]['park_id'])  # create list of park IDs
+        </code>
+</pre>
+
+<p>The final function to run used the data and selected parks to write a document in Word format.</p>
+<pre>
+    <code>
+        def write_word_doc(new_park, mn_parks_guide):
+            import requests, docx, shutil
+            mn_parks_guide.add_heading(new_park["name"], 2)
+            mn_parks_guide.add_heading("Contact Information:", 3)
+    </code>
+</pre>
+
+<a href="https://github.com/KE651/StateParkGuide_py/blob/main/mn_parks_travel_guide.py"> This program can be viewed at my Github.</a>
+<br><br>
+</body>
+</html>

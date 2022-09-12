@@ -1,0 +1,35 @@
+body {
+    background-color: mistyrose;
+    color:rebeccapurple;
+    font-family: "Times New Roman", serif;
+    font-weight: bolder;
+    font-size: large;
+}
+
+textarea {
+    color:cadetblue;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    border-style:solid;
+    border-color: cadetblue;
+    border-width: 2px;
+    border-radius:10px;
+}
+
+input[name="student"]{
+    accent-color: rebeccapurple;
+    /* https://usefulangle.com/post/389/css-radio-button-color */
+
+}
+
+.submit {
+    background-color: deeppink;
+    color:black;
+    font-weight: bolder;
+    font-size:xx-large;
+}
+
+* {
+    box-sizing: border-box;
+}
+/* for responsive design, include padding and border for all elements https://www.w3schools.com/css/css_rwd_grid.asp */
