@@ -1,0 +1,20 @@
+#real-alert {
+    border:30px;
+    border-color:orange;
+    border-style:dotted;
+    background-color: red;
+    color:yellow;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-size:x-large
+}
+
+#test-only {
+    border: 60px;
+    border-color: lightgreen;
+    border-style: solid;
+    background-color: green;
+    color:white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:xx-large
+}
